@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>ShoreSquad - Rally Your Crew for Beach Cleanups</title>  <meta name="description" content="Rally your crew, track weather, and hit the next beach cleanup with our dope map app!">  <link rel="stylesheet" href="css/styles.css?v=2025060600">
+  <script src="cache-buster.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <h1>ShoreSquad</h1>
+          <span class="nav-tagline">🏖️ Clean Beaches, Better Future</span>
+        </div>
+        
+        <div class="nav-menu" id="nav-menu">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#map" class="nav-link">Map</a>
+          <a href="#weather" class="nav-link">Weather</a>
+          <a href="#events" class="nav-link">Events</a>
+          <a href="#about" class="nav-link">About</a>
+        </div>
+        
+        <div class="nav-actions">
+          <button class="nav-btn nav-btn-secondary" id="login-btn">Login</button>
+          <button class="nav-btn nav-btn-primary" id="signup-btn">Sign Up</button>
+        </div>
+        
+        <div class="nav-toggle" id="nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h2>Rally Your Crew.<br>Clean the Shore.<br>Make Waves.</h2>
+          <p class="hero-description">Join thousands of eco-warriors making a difference. Use our smart weather tracking and interactive maps to plan the perfect beach cleanup with your crew.</p>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-number">2,500+</span>
+              <span class="stat-label">Active Cleanups</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">15,000+</span>
+              <span class="stat-label">Volunteers</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">50,000+</span>
+              <span class="stat-label">Lbs Collected</span>
+            </div>
+          </div>
+          <div class="hero-buttons">
+            <button class="btn-primary large" id="join-btn" aria-describedby="join-description">
+              <span>🌊</span>
+              Join a Cleanup
+            </button>
+            <button class="btn-secondary large" id="create-btn">
+              <span>📍</span>
+              Create Event
+            </button>
+          </div>
+          <p id="join-description" class="sr-only">Click to find and join beach cleanup events near you</p>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-image">
+            <div class="floating-card weather-preview">
+              <h4>🌤️ Perfect Weather</h4>
+              <p>Sunny, 72°F<br>Ideal for cleanup!</p>
+            </div>
+            <div class="floating-card crew-preview">
+              <h4>👥 Active Crews</h4>
+              <p>25 crews near you<br>Join the movement!</p>
+            </div>
+            <div class="hero-illustration">
+              <div class="beach-scene">
+                <div class="wave wave-1"></div>
+                <div class="wave wave-2"></div>
+                <div class="wave wave-3"></div>
+                <div class="beach-items">
+                  <span class="item">🏖️</span>
+                  <span class="item">🐚</span>
+                  <span class="item">⭐</span>
+                  <span class="item">🌺</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>    <section id="map">
+      <h3>Find a Beach Cleanup</h3>
+      <div id="map-container" aria-label="Interactive map showing beach cleanup locations" role="img">
+        <p class="loading-text">🗺️ Loading interactive map...</p>
+      </div>
+    </section>
+
+    <section id="weather">
+      <h3>Weather at Your Beach</h3>
+      <div id="weather-info" aria-live="polite">
+        <p class="loading-text">🌤️ Loading weather information...</p>
+      </div>
+    </section>
+
+    <section id="events">
+      <h3>Your Crew Events</h3>
+      <div id="events-container">
+        <ul id="event-list" aria-label="List of your upcoming beach cleanup events">
+          <li>No events yet. Join your first cleanup!</li>
+        </ul>
+        <button id="create-event-btn">Create New Event</button>
+      </div>
+    </section>
+
+    <section id="about">
+      <h3>About ShoreSquad</h3>
+      <p>We mobilize young people to clean beaches using weather data and maps for easy planning. Our social features make eco-action fun and connected!</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ShoreSquad. Eco-action, made fun.</p>
+    <nav aria-label="Footer navigation">
+      <a href="#privacy">Privacy</a> | 
+      <a href="#terms">Terms</a> | 
+      <a href="#contact">Contact</a>
+    </nav>
+  </footer>
+
+  <script src="js/app.js?v=2025060602"></script>
+</body>
+</html>
